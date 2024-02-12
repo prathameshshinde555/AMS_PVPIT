@@ -1,4 +1,4 @@
-# IIITDM Alumni Connect   
+# PVPIT Alumni Connect   
   This web application aims to facilitate the Alumni Affairs of IIITDM Jabalpur. Please read the contributing guidelines before starting.
 
 ## Requirements
