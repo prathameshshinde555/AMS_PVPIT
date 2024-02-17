@@ -4,20 +4,21 @@ SECRET_KEY = "dikj)qxgkhe7v$y7l))d!!nkut&^6q7+x^@ys7c1z!#!&*94r5"
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
+
 
 # EMAIL SETTINGS
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'your-email@gmail.com'
-EMAIL_HOST_PASSWORD = 'your-password'
+EMAIL_FROM = 'pvpitconnect@gmail.com'
+EMAIL_HOST_USER = 'pvpitconnect@gmail.com'
+EMAIL_HOST_PASSWORD = 'dcnabpuieczdjnfl'
 EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
-DEFAULT_FROM_EMAIL = "Alumni Cell IIITDMJ <your-email@gmail.com>"
-BCC_EMAILS = ["bcc-email1@gmail.com", "bcc-email2@gmail.com"]
+DEFAULT_FROM_EMAIL = "pvpitconnect@gmail.com"
+BCC_EMAILS = ["bpvpitconnect@gmail.com", "pvpitconnect@gmail.com"]
 
 if DEBUG:
     STATICFILES_DIRS = (os.path.join(BASE_DIR, '..', 'static/'),)

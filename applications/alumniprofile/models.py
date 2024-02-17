@@ -140,7 +140,7 @@ class Profile(models.Model):
 def check(sender, instance, created, update_fields, **kwargs):
     if instance.mail_sent_tracker.has_changed('verify') and instance.mail_sent_tracker.previous(
             'verify') != True:  # Alumni Verified
-        mail_sent = send_verification_email("alumni.iiitdmj.ac.in", True, instance)
+        mail_sent = send_verification_email("127.0.0.1:8000", True, instance)
 
         # Can use either of below methods.
         # Though, the bottom one is preferred.
